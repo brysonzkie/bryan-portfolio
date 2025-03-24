@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Makes the navbar sticky */
+    top: 0; /* Positions at the top of the viewport */
+    left: 0; /* Starts from the left edge */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Vertical padding instead of margin */
+    background-color: #161513; /* Add a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for visual separation */
+    z-index: 1000; /* Ensures navbar stays on top of other content */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    max-width: 1200px; /* Optional: constrains the menu width */
+    width: 100%; /* Takes full width of container */
+    justify-content: center; /* Centers the menu items */
+}
+
+.nav-menu li {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    position: relative;
+}
+
+.nav-menu li:hover {
+    transform: scale(1.2);
+}
