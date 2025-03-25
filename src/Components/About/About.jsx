@@ -27,8 +27,16 @@ const About = () => {
                     <div className="about-skill"><p>HTML & CSS</p></div>
                     <div className="about-skill"><p>JavaScript</p></div>
                     <div className="about-skill"><p>PHP</p></div>
-
-                    
+                    <div className="about-skill"><p>Bootstrap</p></div>
+                    <div className="about-skill"><p>ReactJS</p></div>
+                    <div className="about-skill"><p>React Bootstrap</p></div>
+                    <div className="about-skill"><p>C#</p></div>
+                    <div className="about-skill"><p>NodeJS</p></div>
+                    <div className="about-skill"><p>MYSQL</p></div>
+                    <div className="about-skill"><p>CodeIgniter</p></div>
+                    <div className="about-skill"><p>ASP.NET</p></div>
+                    <div className="about-skill"><p>Python</p></div>
+         
                 </div>
             </div>
         </div>
