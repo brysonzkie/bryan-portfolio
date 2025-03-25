@@ -1,15 +1,16 @@
+/* Navbar.css */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed; /* Makes the navbar sticky */
-    top: 0; /* Positions at the top of the viewport */
-    left: 0; /* Starts from the left edge */
-    width: 100%; /* Full width */
-    padding: 20px 0; /* Vertical padding instead of margin */
-    background-color: #161513; /* Add a background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for visual separation */
-    z-index: 1000; /* Ensures navbar stays on top of other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #161513;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .nav-menu {
@@ -18,17 +19,81 @@
     list-style: none;
     gap: 60px;
     font-size: 20px;
-    max-width: 1200px; /* Optional: constrains the menu width */
-    width: 100%; /* Takes full width of container */
-    justify-content: center; /* Centers the menu items */
+    margin: 0 auto; /* Center the menu */
+    padding: 0;
 }
 
 .nav-menu li {
     cursor: pointer;
     transition: transform 0.4s ease;
     position: relative;
+    color: white;
 }
 
 .nav-menu li:hover {
     transform: scale(1.2);
+}
+
+/* Hamburger menu - hidden by default */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 20px 40px;
+    }
+    
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        z-index: 1001;
+    }
+    
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    .line2 {
+        opacity: 0;
+    }
+    
+    .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 70%;
+        background-color: #161513;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        transition: left 0.5s ease;
+        margin: 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        width: 100%;
+    }
 }
