@@ -1,34 +1,20 @@
 const Services_Data = [
     {
-        s_no:"01",
-        s_name:"Web design",
-        s_desc:"Web development is the process of building, programming..."
+        s_no:"IT support",
+        s_name:"Department of Labor and Employment - 2020",
+        s_desc:"IT Hardware & Software: Installation, configuration, maintenance. Employee assistance for computer and printer troubleshooting."
     },
     {
-        s_no:"02",
-        s_name:"Graphics design",
-        s_desc:"Web development is the process of building, programming..."
+        s_no:"Software Developer Intern",
+        s_name:"MYT SoftDev Solutions Inc. - 2024",
+        s_desc:"Software Development Lifecycle: UI/UX design with Figma. Project management & collaboration with Trello. Front-end development with React.js & API integration. Back-end MVC architecture with CodeIgniter & API integration."
     },
     {
-        s_no:"03",
-        s_name:"Social media",
-        s_desc:"Web development is the process of building, programming..."
+        s_no:"Design associate",
+        s_name:"RipeConcepts, Inc. - 2024",
+        s_desc:"Proof Design: Adobe Creative Suite (Photoshop, Illustrator). Proof Review: Inconsistencies, layout, grammar, quality. Customer Request Verification. Design Consistency: Typography, color, spacing, alignment. Constructive Feedback: Design quality, functionality, impact. Customer Communication: Design requests, revisions."
     },
-    {
-        s_no:"04",
-        s_name:"App design",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"05",
-        s_name:"Digital marketing",
-        s_desc:"Web development is the process of building, programming..."
-    },
-    {
-        s_no:"06",
-        s_name:"Content writing",
-        s_desc:"Web development is the process of building, programming..."
-    },
+    
 ]
  
 export default Services_Data;
