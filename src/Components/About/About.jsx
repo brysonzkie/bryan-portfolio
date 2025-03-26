@@ -15,8 +15,10 @@ const About = () => {
             <div className="about-right">
                 <div className="about-para">
                     <p>
-                        I'm a full-stack developer with a passion for creating engaging user experiences. My background in information technology and software engineering has allowed me to develop innovative solutions for various industries. I am currently working remotely at a small software company, focusing on creating cutting-edge web and mobile applications.
-                    </p>
+                    A passionate BSIT graduate from Cebu with hands-on experience in both development and design. 
+    I thrive at the intersection of logic and creativity—whether I'm building responsive web apps 
+    with React or polishing UI designs in Figma. My time at MYT SoftDev and RipeConcepts taught me 
+    how to bridge technical solutions with user-friendly experiences.                    </p>
                     <p>
                         I'm always eager to learn more about new technologies and programming languages.
                     </p>
@@ -34,11 +36,14 @@ const About = () => {
                     <div className="about-skill"><p>CodeIgniter</p></div>
                     <div className="about-skill"><p>ASP.NET</p></div>
                     <div className="about-skill"><p>Python</p></div>
-         
+                    <div className="about-skill"><p>Figma</p></div>
+                    <div className="about-skill"><p>Adobe Photoshop</p></div>
+                    <div className="about-skill"><p>Adobe Illustrator</p></div>
+                    <div className="about-skill"><p>UI/UX Principles</p></div>
                 </div>
             </div>
         </div>
-        <div className="about-achivements">
+        {/* <div className="about-achivements">
             <div className="about-achievement">
                 <h1>1+</h1>
                 <p>YEARS OF EXPERIENCE</p>
@@ -48,7 +53,7 @@ const About = () => {
                 <h1>(Number of)</h1>
                 <p>PROJECTS COMPLETED</p>
             </div>
-        </div>
+        </div> */}
     </div>
   )
 }
