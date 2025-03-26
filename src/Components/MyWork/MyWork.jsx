@@ -14,11 +14,11 @@ const MyWork = () => {
                 return <img key={index} src={work.w_img} alt="" />
             })}
         </div>
-        <div className="mywork-showmore">
+        {/* <div className="mywork-showmore">
             <p>Show More</p>
             <img src={arrow_icon} alt="" />
           
-        </div>
+        </div> */}
     </div>
   )
 }
