@@ -49,9 +49,14 @@
 
 .hero-connect{
     padding: 25px 45px;
-    border-radius: 50px;
+    border-radius: 30px;
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
     cursor: pointer;
+    border: none; /* Add this to remove default button border */
+    color: white; /* Add text color */
+    font-size: 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .hero-resume {
@@ -61,10 +66,14 @@
     cursor: pointer;
 }
 
-.hero-connect:hover{
+.hero-connect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 2px solid white;
 }
+
 
 .hero-resume:hover{
     border-color:#B415FF;
 }
+
