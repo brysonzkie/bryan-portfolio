@@ -1,79 +1,133 @@
-
-
-.hero{
+.hero {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 35px;
-}
-
-.hero img {
+    padding: 0 1rem; /* Add some horizontal padding for small screens */
+  }
+  
+  .hero img {
     margin-top: 150px;
-    border-radius: 50%; /* This creates the circular shape */
-    width: 300px; /* Set a specific width - adjust as needed */
-    height: 300px; /* Set the same height as width for a perfect circle */
-    object-fit: cover; /* This ensures the image fills the container nicely */
-    border: 3px solid #DA7C25; /* Optional: adds a border, use your brand color */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
-}
-
-.hero h1 {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #DA7C25;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .hero h1 {
     text-align: center;
     width: 70%;
     font-size: 65px;
     font-weight: 600;
-}
-
-.hero h1 span {
+  }
+  
+  .hero h1 span {
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.hero p {
+  }
+  
+  .hero p {
     text-align: center;
     width: 50%;
-    font-size: 24px; 
+    font-size: 24px;
     line-height: 40px;
-}
-
-.hero-action {
+  }
+  
+  .hero-action {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 25px;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 50px;
-}
-
-.hero-connect{
+    justify-content: center;
+  }
+  
+  .hero-connect {
     padding: 25px 45px;
     border-radius: 30px;
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
     cursor: pointer;
-    border: none; /* Add this to remove default button border */
-    color: white; /* Add text color */
+    border: none;
+    color: white;
     font-size: 24px;
     font-weight: 500;
     transition: all 0.3s ease;
-}
-
-.hero-resume {
-    padding: 25px 75px;
-    border-radius: 50px;
-    border: 2px solid #FFF;
-    cursor: pointer;
-}
-
-.hero-connect:hover {
+  }
+  
+  .hero-connect:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 2px solid white;
-}
-
-
-.hero-resume:hover{
-    border-color:#B415FF;
-}
-
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .hero h1 {
+      font-size: 50px;
+      width: 80%;
+    }
+  
+    .hero p {
+      width: 70%;
+      font-size: 20px;
+      line-height: 35px;
+    }
+  
+    .hero img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 40px;
+      width: 90%;
+    }
+  
+    .hero p {
+      width: 85%;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  
+    .hero img {
+      width: 200px;
+      height: 200px;
+      margin-top: 100px;
+    }
+  
+    .hero-connect {
+      padding: 18px 35px;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  
+    .hero img {
+      width: 160px;
+      height: 160px;
+      margin-top: 80px;
+    }
+  
+    .hero-connect {
+      padding: 16px 30px;
+      font-size: 18px;
+    }
+  }
+  
