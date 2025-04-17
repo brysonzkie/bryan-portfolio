@@ -7,23 +7,25 @@ import call_icon from '../../assets/call_icon.svg'
 const Contact = () => {
   return (
     <div id='contact' className='contact'>
-        <div className="contact-title">
-            <h1>Contact</h1>
+      <div className="contact-title">
+        <h1>Contact</h1>
+      </div>
+      <div className="contact-section">
+        <div className="contact-details">
+          <div className="contact-detail">
+            <img src={mail_icon} alt="Mail Icon" />
+            <p><a href="mailto:jbbustamante07.shs@gmail.com">jbbustamante07.shs@gmail.com</a></p>
+          </div>
+          <div className="contact-detail">
+            <img src={call_icon} alt="Phone Icon" />
+            <p><a href="tel:+639616290424">0961 629 0424</a></p>
+          </div>
+          <div className="contact-detail">
+            <img src={location_icon} alt="Location Icon" />
+            <p>Cebu City, Philippines</p>
+          </div>  
         </div>
-        <div className="contact-section">
-            <div className="contact-details">
-                <div className="contact-detail">
-                    <img src={mail_icon} alt="" /> <p>jbbustamante07.shs@gmail.com</p>
-                </div>
-                <div className="contact-detail">
-                    <img src={call_icon} alt="" /> <p>09616290424</p>
-                    
-                </div>
-                <div className="contact-detail">
-                    <img src={location_icon} alt="" /> <p>Cebu City, Philippines</p>
-                </div>  
-            </div>
-        </div>
+      </div>
     </div>
   )
 }
