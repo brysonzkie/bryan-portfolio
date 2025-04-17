@@ -1,8 +1,32 @@
 .footer {
-    margin-top: 200px;
+    width: 100%;
+    padding: 40px 0 20px;
+    background-color: #111;
+    color: #fff;
     text-align: center;
 }
 
-.footer h3 {
-    padding: 20px;
+.footer hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #DA7C25, transparent);
+    margin-bottom: 20px;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    color: #aaa;
+}
+
+/* Optional: subtle hover effect on name */
+.footer-info h3:hover {
+    color: #DA7C25;
+    cursor: default;
+    transition: 0.3s ease;
 }
