@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import profile_img from '../../assets/profile_img.jpg';
-import resumeFile from '../../assets/john bryan bustamante RESUME.pdf'; // Import your resume file
+import resumeFile from '../../assets/John Bryan Bustamante RESUME.pdf'; // Import your resume file
 
 const Hero = () => {
   const handleDownload = () => {
